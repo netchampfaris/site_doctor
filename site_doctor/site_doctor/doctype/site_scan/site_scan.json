@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SCAN-{YYYY}{MM}{DD}-{###}",
+ "creation": "2022-01-15 01:20:40.058885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "started_at",
+  "column_break_2",
+  "status",
+  "completed_at",
+  "execution_time",
+  "section_break_3",
+  "broken_links"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.broken_links && doc.broken_links.length > 0",
+   "fieldname": "broken_links",
+   "fieldtype": "Table",
+   "label": "Broken Links",
+   "options": "Site Broken Link"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Scheduled\nNow\nRunning\nErrored\nCompleted"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "started_at",
+   "fieldtype": "Datetime",
+   "label": "Started At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "completed_at",
+   "fieldtype": "Datetime",
+   "label": "Completed At",
+   "read_only": 1
+  },
+  {
+   "fieldname": "execution_time",
+   "fieldtype": "Duration",
+   "label": "Execution Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-16 07:50:28.046965",
+ "modified_by": "Administrator",
+ "module": "Site Doctor",
+ "name": "Site Scan",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "url"
+}

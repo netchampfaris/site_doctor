@@ -1,0 +1,58 @@
+{
+ "actions": [
+  {
+   "action": "site_doctor.site_doctor.doctype.site.site.scan_site",
+   "action_type": "Server Action",
+   "label": "Scan Site"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "field:url",
+ "creation": "2022-01-14 20:29:26.837308",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url"
+ ],
+ "fields": [
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Site Scan",
+   "link_fieldname": "site"
+  }
+ ],
+ "modified": "2022-01-15 03:33:01.294333",
+ "modified_by": "Administrator",
+ "module": "Site Doctor",
+ "name": "Site",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-01-15 01:19:33.104163",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "page_url",
+  "link",
+  "link_text",
+  "source",
+  "response_status_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "page_url",
+   "fieldtype": "Data",
+   "label": "Page URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "link_text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link Text"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Code",
+   "label": "Source"
+  },
+  {
+   "fieldname": "response_status_code",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Response Status Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-15 02:32:29.040126",
+ "modified_by": "Administrator",
+ "module": "Site Doctor",
+ "name": "Site Broken Link",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
